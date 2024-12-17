@@ -25,6 +25,12 @@ public class Main {
         }
     }
 
+    //Задача 3
+    public static void calculateDeliveryDistance() {
+
+    }
+
+
     public static void main(String[] args) {
             int year = 3005;
         calculateLeapYear(year);
@@ -35,4 +41,4 @@ public class Main {
         }
     }
 
-//Задача 3
+
