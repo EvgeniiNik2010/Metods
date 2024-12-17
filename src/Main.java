@@ -9,14 +9,30 @@ public class Main {
             System.out.println(year + " год - невискосный год");
         }
     }
+//Задача 2
+
+    public static void phoneSelect(int clientDeviceYear, int clientOS1) {
 
 
+        if (clientDeviceYear < 2015 && clientOS1 == 1) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (clientDeviceYear < 2015 && clientOS1 == 0) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientDeviceYear >= 2015 && clientOS1 == 1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        } else if (clientDeviceYear >= 2015 && clientOS1 == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        }
+    }
 
     public static void main(String[] args) {
             int year = 3005;
         calculateLeapYear(year);
+
+        int clientOS1 = 0;
+        int clientDeviceYear = 2014;
+        phoneSelect(clientDeviceYear, clientOS1);
         }
     }
 
-    //Задача 2
-
+//Задача 3
